@@ -1,11 +1,24 @@
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <h1>New message</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			counter-reset: section;
+		}
+		h2::before{
+			counter-increment: section;
+			content: "Section " counter(section) ": ";
+		}
+	</style>
+</head>
+<body>
+	<h1>Using CSS Counters:</h1>
+	<h2>HTML Tutorial</h2>
+	<h2>CSS Tutorial</h2>
+	<h2>JavaScript Tutorial</h2>
 
-  </body>
+<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+
+</body>
 </html>
